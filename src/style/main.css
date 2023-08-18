@@ -1,0 +1,15 @@
+@import "tailwindcss/base";
+
+
+@import "tailwindcss/components";
+@import './hero.css';
+
+
+@import "tailwindcss/utilities";
+
+
+@layer components{
+    .newContainer{
+        @apply container mx-auto 
+    }
+}
