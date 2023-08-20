@@ -1,15 +1,20 @@
 @import "tailwindcss/base";
 
-
 @import "tailwindcss/components";
-@import './hero.css';
-
+@import "./hero.css";
 
 @import "tailwindcss/utilities";
 
-
-@layer components{
-    .newContainer{
-        @apply container mx-auto 
+@layer base {
+  header {
+    li {
+      @apply hover:border-b hover:border-white mx-2;
     }
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply w-full mx-auto px-5;
+  }
 }
