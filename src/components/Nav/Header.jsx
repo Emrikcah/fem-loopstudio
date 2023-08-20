@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../../assets/logo.svg";
+import logo from "@assets/logo.svg";
 import { MdMenu, MdClose } from "react-icons/md";
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
