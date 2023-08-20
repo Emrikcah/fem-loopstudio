@@ -1,7 +1,7 @@
 @import "tailwindcss/base";
 
 @import "tailwindcss/components";
-@import "./hero.css";
+
 
 @import "tailwindcss/utilities";
 
@@ -17,4 +17,9 @@
   .section-container {
     @apply w-full mx-auto px-5;
   }
+
+  .hero{
+    @apply bg-no-repeat bg-center lg:bg-left-top bg-cover py-16;
+    
+ }
 }
