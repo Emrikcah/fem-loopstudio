@@ -1,12 +1,43 @@
 ---
+ export const images = [
+  {
+    id: 1,
+    mobileImg: '@assets/mobile/image-deep-earth.jpg',
+    desktopImg: '@assets/desktop/image-deepearth.jpg',
+    text:"deep earth",
+    alt: 'earth',
+  },
+  {
+    id: 2,
+    mobileImg: '@assets/mobile/image-deep-earth.jpg',
+    desktopImg: '@assets/desktop/image-deepearth.jpg',
+    text:'night arcade',
+    alt: 'arcade',
+  },
+  // Add more image objects as needed
+];
+
 
 ---
 
+ 
+
+
 <section id="creations" class="creations">
     <div class="section-container">
-        <div class="my-32 text-veryDarkGray md:px-0">
-            
-        </div>
-
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+            {images.map((item) => (
+              <div class="text-center">
+                <img
+                  src={window.innerWidth <= 767 ? item.mobileImg : item.desktopImg}
+                  alt={item.alt}
+                  class="mb-6 inline-block"
+                />
+                
+                <p class="text mb-16">{item.text}</p>
+              </div>
+            ))}
+          </div>
+          
     </div>
 </section>
