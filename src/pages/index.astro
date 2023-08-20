@@ -1,5 +1,6 @@
 ---
-import Hero from "../components/Hero/Hero.astro";
+import Hero from "@components/Hero/Hero.astro";
+import Feature from '@components/Feature/Feature.astro'
 
 import '@style/main.css';
 
@@ -24,8 +25,9 @@ import '@style/main.css';
     <!-- Google fonts end -->
     <title>LoopStudio</title>
   </head>
-  <body>
+  <body class="container mx-auto">
     <Hero/>
+    <Feature/>
 	
 </body>
 </html>
