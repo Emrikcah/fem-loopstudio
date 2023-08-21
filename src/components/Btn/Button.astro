@@ -1,0 +1,6 @@
+---
+const {isMobile} = Astro.props;
+
+---
+
+<button class={`px-10 my-0 font-alata font-bold tracking-widest uppercase border-2 border-black hover:bg-black hover:text-white ${isMobile ? 'justify-self-center lg:hidden  ':'hidden lg:block'}`}>see all</button>
