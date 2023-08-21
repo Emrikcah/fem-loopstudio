@@ -1,20 +1,79 @@
 ---
+import earthM from '@assets/mobile/image-deep-earth.jpg'
+import earthD from '@assets/desktop/image-deep-earth.jpg'
+import arcadeM from '@assets/mobile/image-night-arcade.jpg'
+import arcadeD from '@assets/desktop/image-night-arcade.jpg'
+import curiosityM from '@assets/mobile/image-curiosity.jpg'
+import curiosityD from '@assets/desktop/image-curiosity.jpg'
+import fishM from '@assets/mobile/image-fisheye.jpg'
+import fishD from '@assets/desktop/image-fisheye.jpg'
+import aboveM from '@assets/mobile/image-from-above.jpg'
+import aboveD from '@assets/desktop/image-from-above.jpg'
+import gridM from '@assets/mobile/image-grid.jpg'
+import gridD from '@assets/desktop/image-grid.jpg'
+import pocketM from '@assets/mobile/image-pocket-borealis.jpg'
+import pocketD from '@assets/desktop/image-pocket-borealis.jpg'
+import soccerM from '@assets/mobile/image-soccer-team.jpg'
+import soccerD from '@assets/desktop/image-soccer-team.jpg'
+
  export const images = [
   {
     id: 1,
-    mobileImg: '@assets/mobile/image-deep-earth.jpg',
-    desktopImg: '@assets/desktop/image-deepearth.jpg',
+    mobileImg: earthM,
+    desktopImg: earthD,
     text:"deep earth",
     alt: 'earth',
   },
   {
     id: 2,
-    mobileImg: '@assets/mobile/image-deep-earth.jpg',
-    desktopImg: '@assets/desktop/image-deepearth.jpg',
+    mobileImg: arcadeM,
+    desktopImg: arcadeD,
     text:'night arcade',
     alt: 'arcade',
   },
-  // Add more image objects as needed
+  {
+    id: 3,
+    mobileImg: soccerM,
+    desktopImg: soccerD,
+    text:'soccer team vr',
+    alt: 'soccer player',
+  },
+  {
+    id: 4,
+    mobileImg: gridM,
+    desktopImg: gridD,
+    text:'the grid',
+    alt: 'race car',
+  },
+  {
+    id: 5,
+    mobileImg: aboveM,
+    desktopImg: aboveD,
+    text:'from up above vr',
+    alt: 'ariel view of twisting road',
+  },
+  {
+    id: 6,
+    mobileImg: pocketM,
+    desktopImg: pocketD,
+    text:'pocket borealis',
+    alt: 'borealis',
+  },
+  {
+    id: 7,
+    mobileImg: curiosityM,
+    desktopImg: curiosityD,
+    text:'the curiosity',
+    alt: 'mars rover',
+  },
+  {
+    id: 8,
+    mobileImg: fishM,
+    desktopImg: fishD,
+    text:'make it fisheye',
+    alt: 'fisheye',
+  },
+ 
 ];
 
 
@@ -25,38 +84,38 @@
 
 <section id="creations" class="creations">
     <div class="section-container">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-            {images.map((item) => (
-              <div class="text-center">
-                <img
-                  src={window.innerWidth <= 767 ? item.mobileImg : item.desktopImg}
-                  alt={item.alt}
-                  class="mb-6 inline-block"
-                />
-                
-                <p class="text mb-16">{item.text}</p>
-              </div>
-            ))}
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        {images.map((item) => (
+          <div class="text-center">
+            <img
+              src={item.mobileImg}
+              alt={item.alt}
+              class="mb-6 inline-block md:hidden lg:hidden xl:hidden"
+            />
+            <img
+              src={item.desktopImg}
+              alt={item.alt}
+              class="mb-6 hidden md:inline-block "
+            />
+            
+            <p class="text mb-16">{item.text}</p>
           </div>
+        ))}
+      </div>
+    </div>
+  </section>
+  <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      {images.map((item) => (
+        <div class="text-center">
+          <img
+            src={window.innerWidth <= 767 ? item.mobileImg : item.desktopImg}
+            alt={item.alt}
+            class="mb-6 inline-block"
+          />
           
-    </div>
-</section>
+          <p class="text mb-16">{item.text}</p>
+        </div>
+      ))}
+    </div> -->
 
-<!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-  {superCharge.map((item) => (
-    <div class="text-center">
-      <img
-        src={item.mobileImg}
-        alt={item.alt}
-        class="mb-6 inline-block md:hidden lg:hidden xl:hidden"
-      />
-      <img
-        src={item.desktopImg}
-        alt={item.alt}
-        class="mb-6 inline-block hidden md:inline-block lg:inline-block xl:inline-block"
-      />
-      <h5>{item.title}</h5>
-      <p class="text mb-16">{item.text}</p>
-    </div>
-  ))}
-</div> -->
