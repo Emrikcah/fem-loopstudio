@@ -22,4 +22,14 @@
     @apply bg-no-repeat bg-center lg:bg-left-top bg-cover py-16;
     
  }
+
+
+ /* align-items: end */
+ .stacked{
+  @apply grid;
+  > *{
+    @apply col-span-full row-span-full;
+   
+  }
+ }
 }
