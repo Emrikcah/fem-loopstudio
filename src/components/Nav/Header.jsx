@@ -25,8 +25,9 @@ const Header = () => {
           <Nav MdMenu={MdMenu} isOpen={isOpen} handleOpen={handleOpen} />
           {/* nav end */}
 
-         
+         {/* mobile nav */}
           {isOpen && <MobileNav MdClose={MdClose} handleClose={handleClose} />}
+          {/* mobile nav end */}
         </div>
       </div>
     </header>
