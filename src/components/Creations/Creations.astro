@@ -1,4 +1,6 @@
 ---
+import Button from '@components/Btn/Button.astro'
+
 import earthM from '@assets/mobile/image-deep-earth.jpg'
 import earthD from '@assets/desktop/image-deep-earth.jpg'
 import arcadeM from '@assets/mobile/image-night-arcade.jpg'
@@ -84,24 +86,29 @@ import soccerD from '@assets/desktop/image-soccer-team.jpg'
 
 <section id="creations" class="creations">
     <div class="section-container">
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <div class="flex flex-col lg:flex-row  md:justify-between">
+        <h2 class="text-center text-4xl lg:text-5xl uppercase">our creations</h2>
+        <Button isMobile={false} />
+      </div>
+       
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  ">
         {images.map((item) => (
-          <div class="text-center">
+          <div class="text-center stacked">
             <img
               src={item.mobileImg}
               alt={item.alt}
-              class="mb-6 inline-block md:hidden lg:hidden xl:hidden"
+              class=" inline-block md:hidden lg:hidden xl:hidden"
             />
             <img
               src={item.desktopImg}
               alt={item.alt}
-              class="mb-6 hidden md:inline-block "
+              class=" hidden md:inline-block "
             />
             
-            <p class="text mb-16">{item.text}</p>
+            <p class="text">{item.text}</p>
           </div>
         ))}
+      <Button isMobile={true} />
       </div>
     </div>
   </section>
