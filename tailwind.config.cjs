@@ -9,14 +9,14 @@ module.exports = {
       lg: "1024px",
       xl: "1440px",
     },
-    colors: {
-      white: "hsl(0, 0%, 100%)",
-      black: "hsl(0, 0%, 0%)",
-      darkGray: "#3f3cbb",
-      veryDarkGray: "hsl(0, 0%, 41%)",
-      red: "red",
-    },
     extend: {
+      colors: {
+        white: "hsl(0, 0%, 100%)",
+        black: "hsl(0, 0%, 0%)",
+        darkGray: "#3f3cbb",
+        veryDarkGray: "hsl(0, 0%, 41%)",
+        red: "red",
+      },
       fontFamily: {
         sans: ["Josefin Sans", "sans-serif"],
         alata: ["Alata"],
