@@ -91,21 +91,22 @@ import soccerD from '@assets/desktop/image-soccer-team.jpg'
         <Button isMobile={false} />
       </div>
        
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  ">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:justify-items-center  ">
         {images.map((item) => (
-          <div class="text-center stacked">
+          <div class="stacked text-center group relative overflow-hidden  ">
             <img
-              src={item.mobileImg}
-              alt={item.alt}
-              class=" inline-block md:hidden lg:hidden xl:hidden"
+            src={item.mobileImg}
+            alt={item.alt}
+            class=" inline-block md:hidden lg:hidden xl:hidden"
             />
             <img
-              src={item.desktopImg}
-              alt={item.alt}
-              class=" hidden md:inline-block "
+            src={item.desktopImg}
+            alt={item.alt}
+            class=" hidden md:block  duration-200  group-hover:scale-110"
             />
+            <div class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70"></div>
             
-            <p class="text">{item.text}</p>
+            <h4 class="self-end  text-2xl uppercase text-white duration-200 group-hover:scale-110 group-hover:text-black">{item.text}</h4>
           </div>
         ))}
       <Button isMobile={true} />
