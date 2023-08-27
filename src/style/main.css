@@ -2,13 +2,13 @@
 
 @import "tailwindcss/components";
 
-
 @import "tailwindcss/utilities";
 
 @layer base {
-  header {
+  header,
+  footer {
     li {
-      @apply hover:border-b hover:border-white mx-2;
+      @apply hover:border-b hover:border-white  cursor-pointer;
     }
   }
 }
@@ -18,18 +18,15 @@
     @apply w-full mx-auto px-5;
   }
 
-  .hero{
+  .hero {
     @apply bg-no-repeat bg-center lg:bg-left-top bg-cover py-16;
-    
- }
-
-
- /* align-items: end */
- .stacked{
-  @apply grid;
-  > *{
-    @apply col-span-full row-span-full;
-   
   }
- }
+
+  /* align-items: end */
+  .stacked {
+    @apply grid;
+    > * {
+      @apply col-span-full row-span-full;
+    }
+  }
 }
