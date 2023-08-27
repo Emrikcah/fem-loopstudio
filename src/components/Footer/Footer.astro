@@ -1,12 +1,20 @@
 ---
 import logo from "@assets/logo.svg";
-import NavLinks from '@components/Nav/NavLinks'
+import Icons from "@components/Icons/Icons.astro";
+import NavLinks from "@components/Nav/NavLinks";
 ---
 
-<section id="footer" class="footer bg-black">
-    <div class="section-container py-10 ">
-        <div class="">
-
-        </div>
+<footer id="footer" class="footer bg-black">
+  <div class="section-container py-10">
+    <div
+      class="text-white list-none grid justify-items-center md:justify-items-stretch md:grid-cols-[repeat(2,auto)] md:grid-rows-[repeat(2,auto)] md:justify-between"
+    >
+      <img src={logo} alt="logo" class="" />
+      <NavLinks styles="md:flex gap-2 col-start-1 row-start-2" />
+      <Icons />
+      <p class="">2021 Loopstudios. All rights reserved.</p>
     </div>
-</section>
+  </div>
+</footer>
+
+
