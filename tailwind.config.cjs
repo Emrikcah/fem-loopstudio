@@ -26,7 +26,7 @@ module.exports = {
         desktop: "url('src/assets/desktop/image-hero.jpg')",
       },
       gridTemplateColumns: {
-        13: "repeat(5, minmax(min-content, min-content))",
+        13: "repeat(5, minmax(min-content, min-content))", 
       },
       maxWidth: {},
     },
