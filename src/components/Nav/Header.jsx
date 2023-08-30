@@ -5,7 +5,7 @@ import Nav from "./Nav";
 import MobileNav from "./MobileNav";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const handleOpen = () => {
     setIsOpen(true);
