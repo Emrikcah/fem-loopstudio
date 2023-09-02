@@ -6,23 +6,34 @@
 
 @layer base {
   header,
-  footer {
+  footer  {
     li {
       @apply hover:border-b hover:border-white  cursor-pointer;
     }
   }
 }
 
+
 @layer components {
   .section-container {
     @apply w-full mx-auto px-5;
   }
-
+  
+  /* disable scroll dehavior when isOpen is true */
+  .scroll-disabled{
+    @apply overflow-hidden;
+  }
+  
   /* align-items: end */
   .stacked {
     @apply grid;
     > * {
       @apply col-span-full row-span-full;
+    }
+  }
+  .footer{
+    .svg{
+      @apply hover:border-b hover:border-white  cursor-pointer mb-6 
     }
   }
 }
