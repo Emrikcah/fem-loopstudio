@@ -16,7 +16,7 @@
 
 @layer components {
   .section-container {
-    @apply w-full mx-auto px-5;
+    @apply w-full max-w-[1111px] mx-auto ;
   }
   
   /* disable scroll dehavior when isOpen is true */
@@ -33,7 +33,7 @@
   }
   .footer{
     .svg{
-      @apply hover:border-b hover:border-white  cursor-pointer mb-6 
+      @apply hover:border-b hover:border-white  cursor-pointer pb-2 
     }
   }
 }

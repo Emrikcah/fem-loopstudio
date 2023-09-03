@@ -81,9 +81,9 @@ export const images = [
 const Creations = () => {
   return (
    <section id="creations" class="creations mb-24">
-   <div class="section-container">
-     <div class="flex flex-col lg:flex-row  md:justify-between">
-       <h2 class="text-center text-3xl lg:text-5xl uppercase mb-12">our creations</h2>
+   <div class="section-container px-5">
+     <div class="flex flex-col lg:flex-row lg:items-center  md:justify-between mb-12">
+       <h2 class="text-center text-3xl lg:text-5xl uppercase ">our creations</h2>
        <Button isMobile={false} />
      </div>
       
@@ -93,7 +93,7 @@ const Creations = () => {
            <img
            src={item.mobileImg}
            alt={item.alt}
-           class=" inline-block md:hidden lg:hidden xl:hidden"
+           class=" inline-block md:hidden "
            />
            <img
            src={item.desktopImg}
