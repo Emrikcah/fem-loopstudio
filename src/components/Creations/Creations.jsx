@@ -80,29 +80,29 @@ export const images = [
 
 const Creations = () => {
   return (
-   <section id="creations" class="creations mb-24">
-   <div class="section-container px-5">
-     <div class="flex flex-col lg:flex-row lg:items-center  md:justify-between mb-12">
-       <h2 class="text-center text-3xl lg:text-5xl uppercase ">our creations</h2>
+   <section id="creations" className="creations mb-24">
+   <div className="section-container px-5">
+     <div className="flex flex-col lg:flex-row lg:items-center  md:justify-between mb-12">
+       <h2 className="text-center text-3xl lg:text-5xl uppercase ">our creations</h2>
        <Button isMobile={false} />
      </div>
       
-     <div class="grid grid-cols-1 gap-y-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:justify-items-center  ">
+     <div className="grid grid-cols-1 gap-y-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:justify-items-center  ">
        {images.map((item) => (
-         <div class="stacked text-center group relative overflow-hidden  ">
+         <div className="stacked text-center group relative overflow-hidden  ">
            <img
            src={item.mobileImg}
            alt={item.alt}
-           class=" inline-block md:hidden "
+           className=" inline-block md:hidden "
            />
            <img
            src={item.desktopImg}
            alt={item.alt}
-           class=" hidden md:block  duration-200  group-hover:scale-110"
+           className=" hidden md:block  duration-200  group-hover:scale-110"
            />
-           <div class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70"></div>
+           <div className="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70"></div>
            
-           <h4 class="self-end justify-self-start text-left  text-2xl uppercase text-white duration-200 group-hover:scale-110 group-hover:text-black p-4 z-10" dangerouslySetInnerHTML={{ __html: item.text }}></h4>
+           <h4 className="self-end justify-self-start text-left  text-2xl uppercase text-white duration-200 group-hover:scale-110 group-hover:text-black p-4 z-10" dangerouslySetInnerHTML={{ __html: item.text }}></h4>
          </div>
        ))}
      <Button isMobile={true} />
