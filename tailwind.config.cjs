@@ -22,8 +22,8 @@ module.exports = {
         alata: ["Alata"],
       },
       backgroundImage: {
-        mobile: "url('src/assets/mobile/image-hero.jpg')",
-        desktop: "url('src/assets/desktop/image-hero.jpg')",
+        mobile: "url('/src/assets/mobile/image-hero.jpg')",
+        desktop: "url('/src/assets/desktop/image-hero.jpg')",
       },
       gridTemplateColumns: {
         13: "repeat(5, minmax(min-content, min-content))", 
