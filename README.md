@@ -1,5 +1,5 @@
 
-![Design preview for the Loopstudios landing page coding challenge](/desktop-preview.jpg)
+![Design preview for the Loopstudios landing page coding challenge](/public/desktop-preview.jpg)
 
 
 ### The challenge
@@ -11,10 +11,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/Emrikcah/fem-loopstudio)
 
-## My process
 
 ### Built with
 
