@@ -89,7 +89,7 @@ const Creations = () => {
       
      <div className="grid grid-cols-1 gap-y-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:justify-items-center  ">
        {images.map((item) => (
-         <div className="stacked text-center group relative overflow-hidden  ">
+         <div key={item.id} className="stacked text-center group relative overflow-hidden  ">
            <img
            src={item.mobileImg}
            alt={item.alt}

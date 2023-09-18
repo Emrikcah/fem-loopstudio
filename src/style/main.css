@@ -15,9 +15,7 @@
 
 
 @layer components {
-  .section-container {
-    @apply w-full max-w-[1111px] mx-auto ;
-  }
+
   
   /* disable scroll dehavior when isOpen is true */
   .scroll-disabled{
@@ -35,5 +33,20 @@
     .svg{
       @apply hover:border-b hover:border-white  cursor-pointer pb-2 
     }
+  }
+}
+
+
+.section-container{
+  width: calc(100% - 32px);
+  max-width: 1100px;
+  margin-inline: auto;
+
+  @media(min-width: 600px){
+     width: calc(100% - 60px);
+  }
+
+  @media(min-width: 1000px){
+     width: calc(100% - 58px);
   }
 }

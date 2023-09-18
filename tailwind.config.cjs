@@ -2,14 +2,8 @@
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
-    screens: {
-      sm: "375px",
-      md: "768px",
-      l: "425px",
-      lg: "1024px",
-      xl: "1440px",
-    },
     extend: {
+     
       colors: {
         white: "hsl(0, 0%, 100%)",
         black: "hsl(0, 0%, 0%)",
